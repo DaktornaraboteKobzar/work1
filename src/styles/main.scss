@@ -271,6 +271,7 @@ body
       //padding: 24px 34px;
       display: flex;
       justify-content: space-around;
+      position: relative;
       &__date 
       {
       
@@ -285,13 +286,13 @@ body
       }
       &__format
       {
-        position: relative;
+        
         margin-left: 0px;
         &::before 
         {
           content:"";
           position: absolute;
-          left: -63px;
+          left: 50%;
           top:10px;
           //margin: 0 48px;
           width: 1px;
