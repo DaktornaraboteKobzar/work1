@@ -1,0 +1,376 @@
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/functions";
+@import "vendor/libs";
+@import "base/fonts";
+@import "base/general";
+@import "../blocks/modules";
+$light-green: #54F3FF;
+$darck-green: #33BAA8;
+$primary: #0C71C3;
+$grey: #797979;
+body
+{
+  background-color:#E5E5E5;
+  font-family: Tahoma;
+}
+.wrapper
+{
+  width: 602px;
+  display: block;
+  margin: 0  auto;
+}
+.time-event
+{
+  background-image: url('../img/blue_bg.png');
+  height: 180px; 
+  width: 100%;
+&__container {
+  display: flex;
+  justify-content: space-between;
+  padding:20px 31px;
+}
+
+  &__logo{
+    background-image: url('../img/logo.png');
+    width: 300px;
+    height: 140px;
+    
+  }
+  p 
+  {
+    color:$light-green;
+    font-size: 18px;
+    font-family: Tahoma;
+    margin: auto 0;
+    line-height: 28px;
+    font-weight: bold;
+
+
+  }
+  }
+
+
+  .event-info 
+  {
+    &__description {
+      padding: 44px 31px;
+      background-color: white;
+      h2 
+      {
+        color: $primary;
+        font-family: Tahoma;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 56px;
+  
+      }
+      p {
+        span {
+          color: $primary;
+        }
+        width: 540px;
+        font-family: Tahoma;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+      }
+    }
+    &-btnCont
+    {
+      display: flex;
+      justify-content: space-between;
+      &_footer 
+      {
+        justify-content: space-around;
+        margin: 24px 25px;
+      }
+      &__blueBtn
+      {
+        background-color: $darck-green;
+        border: none;
+        width: 264px;
+        height: 96px;
+        font-family: Tahoma;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 24px;
+        color: #FFFFFF;
+        border-radius: 4px;
+      } 
+      &__whiteBtn
+      {
+        border-radius: 4px;
+        background: white;
+        width: 264px;
+        height: 96px;
+        border: 1px solid #000000;
+        font-family: Tahoma;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+  }
+
+  .doctor-info
+  {
+    background-image: url('../img/blue_bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 48px 41px;
+    &_LogoCont {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 42px;
+      margin-top: 32px;
+      h4 
+      {
+        margin:auto auto;
+        font-family: Tahoma;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 130%;  
+        color:white;
+        margin-left: 24px;
+        width: 344px;
+      }
+    }
+    &__speach 
+    {
+      display: flex;
+      justify-content: space-between;
+      img
+      {
+        width: 100px;
+        height: 100px;
+        margin-top: 16px;
+      }
+      p 
+      {
+       
+        margin-left: 24px;
+        width: 396px;
+        font-family: Tahoma;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: white;
+        span 
+        {
+          font-weight: 600;
+
+        }
+      }
+    }
+    h3 
+    {
+      margin:48px 0;
+      width: 540px;
+      text-align: center;
+      color: white;
+      font-size: 28px;
+      line-height: 130%;
+      text-align: center;
+      span
+      {
+        color:$light-green;
+      }
+    }
+    &-videoCont 
+    {
+      
+      
+        position: relative;
+    
+      &__img 
+      {
+        margin: -10px;
+}
+      
+      &__play 
+      {
+        position: absolute;
+        top: 38%;
+        left: 40%;
+        z-index: 11111;
+      }
+      &__desc 
+      {
+        margin-top: 24px;
+        margin-bottom: 32px;
+        width: 540px;
+        font-family: Tahoma;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: white;
+        span 
+        {
+          font-weight: 600;
+
+        }
+      }
+    }
+  }
+  
+
+    .advantages 
+    {
+      background-color: white;
+      margin: -15px;
+      padding: 40px;
+      border-radius: 5px 0px 0px 5px;
+      h4 
+      {
+        color: $primary;
+        font-family: Tahoma;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 140%;  
+      }
+      li 
+      {
+        list-style-type: none;
+        font-family: Tahoma;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 12px;
+        span 
+        {
+          font-weight: bold;
+        }
+        &::before
+        {
+          content:" — ";
+          color: $primary;
+        }
+        
+      }
+    }
+
+
+    
+
+
+  .footer 
+  {
+    background-color: white;
+    &_eventInfo 
+    {
+      //padding: 24px 34px;
+      display: flex;
+      justify-content: space-around;
+      &__date 
+      {
+      
+        width: 190px;
+        color: $primary;
+        font-family: Tahoma;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 140%;
+        
+      }
+      &__format
+      {
+        position: relative;
+        margin-left: 0px;
+        &::before 
+        {
+          content:"";
+          position: absolute;
+          left: -63px;
+          top:10px;
+          //margin: 0 48px;
+          width: 1px;
+          height: 82px;
+          background-color: $light-green;
+          
+        }
+        p{
+          color: #797979;
+        }
+      }
+      .online {
+        background: #55EC2F;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        margin-right: 12px;
+        &__cont 
+        {
+          display: flex;
+          margin: auto 0;
+          
+          span 
+        {
+          font-family: Tahoma;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 22px;
+          line-height: 140%;
+          
+        }
+        }
+        
+      }
+    }
+    &-contact 
+    {
+      border-top: solid 1px $light-green;
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      margin:31px 24px;
+      p {
+        font-family: Tahoma;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+        color: $grey;
+      }
+      &__desc 
+      {
+        width: 322px;
+        font-family: Tahoma;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 40px;;
+        span {
+          color: $grey;
+        }
+
+
+        p{
+          font-family: Tahoma;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 18px; 
+           
+        }
+        &__link 
+          {
+            color: $primary;
+            text-decoration: none;
+          }  
+
+      }
+    }
+  }
+  
