@@ -16,7 +16,7 @@ body
 }
 .wrapper
 {
-  width: 602px;
+  max-width: 602px;
   display: block;
   margin: 0  auto;
 }
@@ -69,8 +69,9 @@ body
       p {
         span {
           color: $primary;
+          font-weight: bold;
         }
-        width: 540px;
+        max-width: 540px;
         font-family: Tahoma;
     font-style: normal;
     font-weight: 400;
@@ -123,6 +124,7 @@ body
     background-repeat: no-repeat;
     background-position: bottom;
     padding: 48px 41px;
+    background-size: cover;
     &_LogoCont {
       display: flex;
       justify-content: space-between;
@@ -138,7 +140,7 @@ body
         line-height: 130%;  
         color:white;
         margin-left: 24px;
-        width: 344px;
+        max-width: 344px;
       }
     }
     &__speach 
@@ -272,14 +274,14 @@ body
     background-color: white;
     &_eventInfo 
     {
-      //padding: 24px 34px;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       position: relative;
+      margin: 0 63px;
       &__date 
       {
       
-        width: 190px;
+        max-width: 190px;
         color: $primary;
         font-family: Tahoma;
         font-style: normal;
@@ -334,11 +336,11 @@ body
     }
     &-contact 
     {
-      border-top: solid 1px $light-green;
+      border-top: solid 1px #54F3FF;
       padding-top: 24px;
       display: flex;
-      justify-content: space-between;
-      margin:31px 24px;
+      justify-content: space-around;
+      margin: 31px 40px 40px 31px;
       p {
         font-family: Tahoma;
         font-style: normal;
@@ -349,7 +351,7 @@ body
       }
       &__desc 
       {
-        width: 322px;
+        max-width: 322px;
         font-family: Tahoma;
         font-style: normal;
         font-weight: normal;
