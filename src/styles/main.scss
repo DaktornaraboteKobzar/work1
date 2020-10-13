@@ -356,6 +356,10 @@ body
       justify-content: space-between;
       position: relative;
       margin: 0 63px;
+      @media(max-width:370px)
+      {
+        flex-direction: column;   
+      }
       &__date 
       {
       
@@ -366,12 +370,19 @@ body
         font-weight: bold;
         font-size: 22px;
         line-height: 140%;
-        
+        @media(max-width:370px)
+        {
+          margin: 20px auto;   
+        }
       }
       &__format
       {
         
         margin-left: 0px;
+        @media(max-width:370px)
+        {
+          margin: 0 auto;   
+        }
         &::before 
         {
           content:"";
@@ -382,6 +393,16 @@ body
           width: 1px;
           height: 82px;
           background-color: $light-green;
+          @media(max-width:370px)
+      {
+        display: none;   
+      }
+          @media(max-width:370px)
+        {
+          margin: 0 auto;
+          text-align: center;
+           
+        } 
           
         }
         p{
