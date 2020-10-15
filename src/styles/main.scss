@@ -123,17 +123,26 @@ body
       }
       &__blueBtn
       {
-        background-color: $darck-green;
-        border: none;
-        width: 264px;
-        height: 96px;
-        font-family: Tahoma;
-        font-style: normal;
-        font-weight: bold;
+        max-width: 264px;
         font-size: 18px;
         line-height: 24px;
-        color: #FFFFFF;
+        text-align: center;
+        font-family: Tahoma;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 28px;
         border-radius: 4px;
+        vertical-align: middle;
+        margin-bottom: 10px;
+        padding:24px 36px;
+        background: $darck-green;
+        color:#ffffff;
+        a 
+        {
+          text-decoration: none;
+          color: #FFFFFF;
+          margin: auto auto;
+        }
         @media(max-width:550px)
         {
           margin: 20px auto;
@@ -142,15 +151,28 @@ body
       &__whiteBtn
       {
         border-radius: 4px;
-        background: white;
-        width: 264px;
-        height: 96px;
-        border: 1px solid #000000;
-        font-family: Tahoma;
-        font-style: normal;
-        font-weight: bold;
+        
+        max-width: 264px;
         font-size: 18px;
         line-height: 24px;
+        text-align: center;
+        font-family: Tahoma;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 28px;
+        border-radius: 4px;
+        vertical-align: middle;
+        margin-bottom: 10px;
+        padding:24px 79px;
+        margin-left: 12px;
+        background: white;
+        border: 1px solid #000000;
+         a 
+        {
+          text-decoration: none;
+          color: #000000;
+          
+        }
         @media(max-width:550px)
         {
           margin: 20px auto;
